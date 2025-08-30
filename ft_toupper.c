@@ -1,28 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sarayapa <sarayapa@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/29 17:14:39 by sarayapa          #+#    #+#             */
-/*   Updated: 2025/08/31 03:46:30 by sarayapa         ###   ########.fr       */
+/*   Created: 2025/08/31 04:10:57 by sarayapa          #+#    #+#             */
+/*   Updated: 2025/08/31 04:15:35 by sarayapa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-# include <stdio.h>
-# include <stdlib.h>
-# include <string.h>
-# include <ctype.h>
-
-int		ft_isalpha(int c);
-int		ft_isdigit(int c);
-int		ft_isalnum(int c);
-int		ft_isascii(int c);
-int		ft_isprint(int c);
-size_t	strlen(const char *s);
-
-#endif
+int	ft_toupper(int c)
+{
+	if ((c >= 'a') || (c <= 'z'))
+		return (c - 32);
+	else
+		return (c);
+}

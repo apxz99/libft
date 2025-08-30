@@ -6,7 +6,7 @@
 #    By: sarayapa <sarayapa@student.42bangkok.co    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/08/29 17:32:46 by sarayapa          #+#    #+#              #
-#    Updated: 2025/08/30 21:13:45 by sarayapa         ###   ########.fr        #
+#    Updated: 2025/08/30 21:19:11 by sarayapa         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ FILE = ft_atoi.c     ft_isascii.c  ft_strlen.c ft_isalnum.c \
 BUILD = build/
 SOURCE = 
 CC = cc
-OBJ = $(FILE)
+OBJ = $(FILE:.c=.o)
 ARCHIVE = ar rcs
 CFLAGS = -Wall -Wextra -Werror
 

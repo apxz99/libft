@@ -6,13 +6,13 @@
 /*   By: sarayapa <sarayapa@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/30 17:22:45 by sarayapa          #+#    #+#             */
-/*   Updated: 2025/08/30 19:55:19 by sarayapa         ###   ########.fr       */
+/*   Updated: 2025/08/31 04:13:36 by sarayapa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	main()
+int	main(void)
 {
-	printf("%d",strncmp("0","2",2));
+	printf("%c", toupper('8'));
 }
