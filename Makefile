@@ -6,13 +6,12 @@
 #    By: sarayapa <sarayapa@student.42bangkok.co    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/08/29 17:32:46 by sarayapa          #+#    #+#              #
-#    Updated: 2025/08/30 21:19:11 by sarayapa         ###   ########.fr        #
+#    Updated: 2025/08/31 09:54:17 by sarayapa         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
-FILE = ft_atoi.c     ft_isascii.c  ft_strlen.c ft_isalnum.c \
-	   ft_isdigit.c  ft_strncmp.c ft_isalpha.c  ft_isprint.c\
+FILE = ft_atoi.c  ft_isalnum.c  ft_isalpha.c  ft_isascii.c  ft_isdigit.c  ft_isprint.c  ft_memset.c  ft_strlen.c  ft_strncmp.c  ft_tolower.c  ft_toupper.c  main.c
 
 BUILD = build/
 SOURCE = 
@@ -27,10 +26,15 @@ $(BUILD):
 	mkdir -p $(BUILD)
 
 %.o: %.c
-	$(CC) $(CFLAG) -c $< -o $(addprefix $(BUILD),$@) 
+	$(CC) $(CFLAGS) -c $< -o $(addprefix $(BUILD),$@) 
 
 $(NAME): $(OBJ) 
 	$(ARCHIVE) $@ $(addprefix $(BUILD),$^)
+
+do:
+	clear && $(CC) $(CLAGS) main.c libft.a && ./a.out
+
+rethendo: re do
 
 clean:
 	rm -f $(NAME) 

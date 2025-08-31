@@ -1,18 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sarayapa <sarayapa@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/31 03:34:32 by sarayapa          #+#    #+#             */
-/*   Updated: 2025/08/31 04:58:04 by sarayapa         ###   ########.fr       */
+/*   Created: 2025/08/31 04:16:45 by sarayapa          #+#    #+#             */
+/*   Updated: 2025/08/31 10:06:28 by sarayapa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isascii(int c)
+void	*ft_memset(void *s, int c, size_t n)
 {
-	return ((c >= '0') && (c <= '9'));
+	unsigned char	*temp;
+
+	temp = (unsigned char *)s;
+	while (n > 0)
+	{
+		*temp++ = c;
+		n--;
+	}
+	return (temp);
 }

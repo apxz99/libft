@@ -6,7 +6,7 @@
 /*   By: sarayapa <sarayapa@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/29 17:14:39 by sarayapa          #+#    #+#             */
-/*   Updated: 2025/08/31 03:46:30 by sarayapa         ###   ########.fr       */
+/*   Updated: 2025/08/31 10:00:07 by sarayapa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ int		ft_isdigit(int c);
 int		ft_isalnum(int c);
 int		ft_isascii(int c);
 int		ft_isprint(int c);
+void	*ft_memset(void *s, int c, size_t n);
+
 size_t	strlen(const char *s);
 
 #endif

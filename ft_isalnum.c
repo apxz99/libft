@@ -6,7 +6,7 @@
 /*   By: sarayapa <sarayapa@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/31 03:34:30 by sarayapa          #+#    #+#             */
-/*   Updated: 2025/08/31 04:00:08 by sarayapa         ###   ########.fr       */
+/*   Updated: 2025/08/31 04:57:47 by sarayapa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,5 @@
 
 int	ft_isalnum(int c)
 {
-	if (ft_isdigit(c) || ft_isalpha(c))
-		return (1);
+	return (ft_isdigit(c) || ft_isalpha(c));
 }
