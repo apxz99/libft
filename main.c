@@ -6,7 +6,7 @@
 /*   By: sarayapa <sarayapa@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/30 17:22:45 by sarayapa          #+#    #+#             */
-/*   Updated: 2025/08/31 11:16:01 by sarayapa         ###   ########.fr       */
+/*   Updated: 2025/08/31 12:08:34 by sarayapa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,11 +79,11 @@
 //
 int	main()
 {
-	char a[] = "12345";
-	memmove(a,"Hello",5);
+	char a[] = "1234";
+	memmove(a+2,"Hello",5);
 	printf("%s\n",a);
 
-	char c[] = "1245";
-	ft_memmove(c,"Hello",5);
+	char c[] = "1234";
+	ft_memmove(c+2,"Hello",5);
 	printf("%s\n",c);
 }

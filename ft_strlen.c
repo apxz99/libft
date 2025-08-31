@@ -6,13 +6,13 @@
 /*   By: sarayapa <sarayapa@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/31 03:34:19 by sarayapa          #+#    #+#             */
-/*   Updated: 2025/08/31 04:00:00 by sarayapa         ###   ########.fr       */
+/*   Updated: 2025/08/31 12:04:52 by sarayapa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	strlen(const char *s)
+size_t	ft_strlen(const char *s)
 {
 	size_t	i;
 
