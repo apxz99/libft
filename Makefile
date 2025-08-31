@@ -6,12 +6,16 @@
 #    By: sarayapa <sarayapa@student.42bangkok.co    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/08/29 17:32:46 by sarayapa          #+#    #+#              #
-#    Updated: 2025/08/31 09:54:17 by sarayapa         ###   ########.fr        #
+#    Updated: 2025/08/31 10:23:17 by sarayapa         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
-FILE = ft_atoi.c  ft_isalnum.c  ft_isalpha.c  ft_isascii.c  ft_isdigit.c  ft_isprint.c  ft_memset.c  ft_strlen.c  ft_strncmp.c  ft_tolower.c  ft_toupper.c  main.c
+FILE = ft_atoi.c  ft_isalnum.c  ft_isalpha.c \
+		ft_isascii.c  ft_isdigit.c  ft_isprint.c \
+		ft_memset.c  ft_strlen.c  ft_strncmp.c  \
+		ft_tolower.c  ft_toupper.c ft_bzero.c \
+		ft_memmove.c
 
 BUILD = build/
 SOURCE = 
