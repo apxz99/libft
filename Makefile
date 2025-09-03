@@ -6,7 +6,7 @@
 #    By: sarayapa <sarayapa@student.42bangkok.co    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/08/29 17:32:46 by sarayapa          #+#    #+#              #
-#    Updated: 2025/08/31 10:23:17 by sarayapa         ###   ########.fr        #
+#    Updated: 2025/09/04 05:18:03 by sarayapa         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,14 +15,14 @@ FILE = ft_atoi.c  ft_isalnum.c  ft_isalpha.c \
 		ft_isascii.c  ft_isdigit.c  ft_isprint.c \
 		ft_memset.c  ft_strlen.c  ft_strncmp.c  \
 		ft_tolower.c  ft_toupper.c ft_bzero.c \
-		ft_memmove.c
+		ft_memmove.c ft_strlcpy.c
 
 BUILD = build/
 SOURCE = 
 CC = cc
 OBJ = $(FILE:.c=.o)
 ARCHIVE = ar rcs
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror 
 
 all: $(BUILD) $(NAME) 
 
@@ -30,13 +30,13 @@ $(BUILD):
 	mkdir -p $(BUILD)
 
 %.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $(addprefix $(BUILD),$@) 
+	$(CC) $(CFLAGS) -c $< -o $(addprefix $(BUILD),$@)
 
 $(NAME): $(OBJ) 
-	$(ARCHIVE) $@ $(addprefix $(BUILD),$^)
+	$(ARCHIVE) $@ $(addprefix $(BUILD),$^) 
 
 do:
-	clear && $(CC) $(CLAGS) main.c libft.a && ./a.out
+	clear && $(CC) $(CLAGS) main.c libft.a -lbsd && ./a.out
 
 rethendo: re do
 

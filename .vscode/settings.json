@@ -1,6 +1,11 @@
 {
 	"files.associations": {
 		"libft.h": "c",
-		"stdlib.h": "c"
-	}
+		"stdlib.h": "c",
+		"ctype.h": "c",
+		"string.h": "c",
+		"random": "c"
+	},
+	"editor.fontSize": 14,
+	"editor.cursorStyle": "line"
 }

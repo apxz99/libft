@@ -6,7 +6,7 @@
 /*   By: sarayapa <sarayapa@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/30 17:22:45 by sarayapa          #+#    #+#             */
-/*   Updated: 2025/08/31 12:08:34 by sarayapa         ###   ########.fr       */
+/*   Updated: 2025/09/04 05:18:12 by sarayapa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,13 +77,28 @@
 //	printf("%s",str);
 //}
 //
+//int	main()
+//{
+//	char a[] = "1234";
+//	memmove(a+3,"Hello",5);
+//	printf("%s\n",a);
+
+//	char c[] = "1234";
+//	ft_memmove(c+3,"Hello",5);
+//	printf("%s\n",c);
+//}
+//
+
+//int    main()
+//{
+//    char a[] = "abc";
+//    char b[] = "def";
+//    printf("%zu", ft_strlcpy(a, b, 8));
+
+//}
 int	main()
 {
-	char a[] = "1234";
-	memmove(a+2,"Hello",5);
-	printf("%s\n",a);
-
-	char c[] = "1234";
-	ft_memmove(c+2,"Hello",5);
-	printf("%s\n",c);
+	char a[] = "abc";
+	char b[] = "def";
+	printf("%zu", strlcat(a, b, 8));
 }
