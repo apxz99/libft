@@ -6,7 +6,7 @@
 /*   By: sarayapa <sarayapa@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/30 17:22:45 by sarayapa          #+#    #+#             */
-/*   Updated: 2025/09/04 05:18:12 by sarayapa         ###   ########.fr       */
+/*   Updated: 2025/09/04 05:24:09 by sarayapa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,14 +20,14 @@
 //	printf("str path memset : %p\n",str);
 //	int j = -1;
 //	while(str[++j])
-//		printf("Value is '%c' Path is %p\n",str[j],(void*)&str[j] );	
+//		printf("Value is '%c' Path is %p\n",str[j],(void*)&str[j] );
 //
 //	memset(str,'a',2);
 //	printf("str after memset : %s\n",str);
 //	printf("str path memset : %p\n",str);
 //	int i = -1;
 //	while(str[++i])
-//		printf("Value is '%c' Path is %p\n",str[i],(void*)&str[i] );	
+//		printf("Value is '%c' Path is %p\n",str[i],(void*)&str[i] );
 //
 //	char c = 'a';
 //	while(c <= 'z' && c >= 'a')
@@ -39,15 +39,15 @@
 //	printf("\n %s\n",str + 2); //=> Hex?
 //}
 //
-////ft_memset 
+////ft_memset
 //int	main(void)
-//{ #memset 
+//{ #memset
 //	char str[] = "Hello";
 //	printf("str before ft_memset : %s\n",str);
 //	printf("str path ft_memset : %p\n",str);
 //	int j = -1;
 //	while(str[++j])
-//		printf("Value is '%c' Path is %p\n",str[j],(void*)&str[j] );	
+//		printf("Value is '%c' Path is %p\n",str[j],(void*)&str[j] );
 //
 //	ft_memset(str,'a',2);
 //	printf("str after ft_memset : %s\n",str);
@@ -55,7 +55,7 @@
 
 //	int i = -1;
 //	while(str[++i])
-//		printf("Value is '%c' Path is %p\n",str[i],(void*)&str[i] );	
+//		printf("Value is '%c' Path is %p\n",str[i],(void*)&str[i] );
 
 //	char c = 'a';
 //	while(c <= 'z' && c >= 'a')
@@ -96,9 +96,9 @@
 //    printf("%zu", ft_strlcpy(a, b, 8));
 
 //}
-int	main()
-{
-	char a[] = "abc";
-	char b[] = "def";
-	printf("%zu", strlcat(a, b, 8));
-}
+//int	main(void)
+//{
+//	char	a[] = "abc";
+//	char	b[] = "def";
+//	printf("%zu", strlcat(a, b, 8));
+//}

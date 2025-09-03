@@ -6,7 +6,7 @@
 /*   By: sarayapa <sarayapa@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/31 10:09:14 by sarayapa          #+#    #+#             */
-/*   Updated: 2025/09/03 18:03:55 by sarayapa         ###   ########.fr       */
+/*   Updated: 2025/09/04 05:25:14 by sarayapa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 //void	*ft_memmove(void *dest, const void *s, size_t n)
 //{
-//	unsigned char *temp; 
-//	unsigned char *src; 
+//	unsigned char *temp;
+//	unsigned char *src;
 
 //	temp = (unsigned char *)dest;
 //	src = (unsigned char *)s;
@@ -41,8 +41,8 @@
 
 void	*ft_memmove(void *dest, const void *s, size_t n)
 {
-	unsigned char *temp; 
-	unsigned char *src; 
+	unsigned char	*temp;
+	unsigned char	*src;
 
 	temp = (unsigned char *)dest;
 	src = (unsigned char *)s;
