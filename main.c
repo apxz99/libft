@@ -6,7 +6,7 @@
 /*   By: sarayapa <sarayapa@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/30 17:22:45 by sarayapa          #+#    #+#             */
-/*   Updated: 2025/09/05 16:32:22 by sarayapa         ###   ########.fr       */
+/*   Updated: 2025/09/05 18:13:14 by sarayapa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -147,18 +147,29 @@
 //  return 0;
 //}
 
+//int main ()
+//{
+//  char buffer1[] = "DWgaOtP12df0";
+//  char buffer2[] = "DWGAOTP12DF0";
+
+//  int n;
+
+//  n= ft_memcmp ( buffer1, buffer2, sizeof(buffer1) );
+
+//  if (n>0) printf ("'%s' is greater than '%s'.\n",buffer1,buffer2);
+//  else if (n<0) printf ("'%s' is less than '%s'.\n",buffer1,buffer2);
+//  else printf ("'%s' is the same as '%s'.\n",buffer1,buffer2);
+
+//  return 0;
+//}
+
 int main ()
 {
-  char buffer1[] = "DWgaOtP12df0";
-  char buffer2[] = "DWGAOTP12DF0";
-
-  int n;
-
-  n= ft_memcmp ( buffer1, buffer2, sizeof(buffer1) );
-
-  if (n>0) printf ("'%s' is greater than '%s'.\n",buffer1,buffer2);
-  else if (n<0) printf ("'%s' is less than '%s'.\n",buffer1,buffer2);
-  else printf ("'%s' is the same as '%s'.\n",buffer1,buffer2);
-
+  char str[] ="This is a simple string";
+  char * pch;
+  pch = ft_strnstr (str,"simple", 18);
+  if (pch != NULL)
+    strncpy (pch,"sample",6);
+  puts (str);
   return 0;
 }
