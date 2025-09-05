@@ -6,7 +6,7 @@
 /*   By: sarayapa <sarayapa@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/30 17:22:45 by sarayapa          #+#    #+#             */
-/*   Updated: 2025/09/04 05:24:09 by sarayapa         ###   ########.fr       */
+/*   Updated: 2025/09/05 16:32:22 by sarayapa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,18 +87,78 @@
 //	ft_memmove(c+3,"Hello",5);
 //	printf("%s\n",c);
 //}
-//
 
 //int    main()
 //{
 //    char a[] = "abc";
 //    char b[] = "def";
 //    printf("%zu", ft_strlcpy(a, b, 8));
-
 //}
 //int	main(void)
 //{
 //	char	a[] = "abc";
 //	char	b[] = "def";
-//	printf("%zu", strlcat(a, b, 8));
+//	//printf("%zu", strlcat(a, b, 8));
+//	printf("%zu", ft_strlcat(a, b, 8));
 //}
+
+//int main(void)
+//{
+//    char destination[20] = "Hello, ";
+//    const char *source = "World!";
+//    size_t total_length;
+
+//    total_length = strlcat(destination, source, sizeof(destination));
+//    printf("Concatenated string: %s\n", destination);
+//    printf("Total length: %zu\n", total_length);
+//    return (0);
+//}
+
+//int main(void)
+//{
+//    char destination[20] = "Hello, ";
+//    const char *source = "World!";
+//    size_t total_length;
+
+//    total_length = ft_strlcat(destination, source, sizeof(destination));
+//    printf("Concatenated string: %s\n", destination);
+//    printf("Total length: %zu\n", total_length);
+//    return (0);
+//}
+
+//int	main()
+//{
+//	printf("%s",ft_strchr("Hello", 'e'));
+//}
+
+//int	main(void)
+//{
+//	printf("%s", ft_strrchr("Hello", 'e'));
+//}
+//int main ()
+//{
+//  char * pch;
+//  char str[] = "Example string";
+//  pch = (char*) ft_memchr (str, 'p', strlen(str));
+//  if (pch!=NULL)
+//    printf ("'p' found at position %ld.\n", pch-str+1);
+//  else
+//    printf ("'p' not found.\n");
+//  return 0;
+//}
+
+int main ()
+{
+  char buffer1[] = "DWgaOtP12df0";
+  char buffer2[] = "DWGAOTP12DF0";
+
+  int n;
+
+  n= ft_memcmp ( buffer1, buffer2, sizeof(buffer1) );
+
+  if (n>0) printf ("'%s' is greater than '%s'.\n",buffer1,buffer2);
+  else if (n<0) printf ("'%s' is less than '%s'.\n",buffer1,buffer2);
+  else printf ("'%s' is the same as '%s'.\n",buffer1,buffer2);
+
+  return 0;
+}

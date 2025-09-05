@@ -1,30 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sarayapa <sarayapa@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/31 03:34:27 by sarayapa          #+#    #+#             */
-/*   Updated: 2025/09/05 16:26:29 by sarayapa         ###   ########.fr       */
+/*   Created: 2025/09/04 05:28:37 by sarayapa          #+#    #+#             */
+/*   Updated: 2025/09/04 22:15:48 by sarayapa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strcmp(const char *s1, const char *s2, size_t n)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	i;
 
-	i = 0;
-	while (s1[i] && s2[i] && i < n)
+	i = ft_strlen(dst);
+	while (size > 0 && *src)
 	{
-		if ((s1[i] - s2[i]) > 0)
-			return (1);
-		else if ((s1[i] - s2[i]) < 0)
-			return (1);
-		else
-			i++;
+		dst[i] = *src++;
+		i++;
+		size--;
 	}
-	return (0);
+	return (ft_strlen(dst));
 }
