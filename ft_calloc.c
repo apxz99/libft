@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sarayapa <sarayapa@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/31 09:54:48 by sarayapa          #+#    #+#             */
-/*   Updated: 2025/09/05 21:29:06 by sarayapa         ###   ########.fr       */
+/*   Created: 2025/09/05 20:51:15 by sarayapa          #+#    #+#             */
+/*   Updated: 2025/09/05 21:45:27 by sarayapa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+void	*ft_calloc(size_t n, size_t size)
 {
-	ft_memset(s, 0, n);
+	ft_bzero(malloc(n * size), n * size);
 }

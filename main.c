@@ -6,7 +6,7 @@
 /*   By: sarayapa <sarayapa@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/30 17:22:45 by sarayapa          #+#    #+#             */
-/*   Updated: 2025/09/05 18:13:14 by sarayapa         ###   ########.fr       */
+/*   Updated: 2025/09/05 22:13:07 by sarayapa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -163,13 +163,18 @@
 //  return 0;
 //}
 
-int main ()
+//int main ()
+//{
+//  char str[] ="This is a simple string";
+//  char * pch;
+//  pch = ft_strnstr (str,"simple", 18);
+//  if (pch != NULL)
+//    strncpy (pch,"sample",6);
+//  puts (str);
+//  return 0;
+//}
+
+int main()
 {
-  char str[] ="This is a simple string";
-  char * pch;
-  pch = ft_strnstr (str,"simple", 18);
-  if (pch != NULL)
-    strncpy (pch,"sample",6);
-  puts (str);
-  return 0;
+  printf("%s",ft_strndup("Hello", 4));
 }

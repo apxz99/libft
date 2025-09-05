@@ -6,7 +6,7 @@
 /*   By: sarayapa <sarayapa@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/05 17:01:45 by sarayapa          #+#    #+#             */
-/*   Updated: 2025/09/05 18:13:14 by sarayapa         ###   ########.fr       */
+/*   Updated: 2025/09/05 21:40:31 by sarayapa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strnstr(const char *dst, const char *str, size_t n)
 {
-	size_t i;
-	size_t j;
+	size_t	i;
+	size_t	j;
 
 	i = 0;
 	j = 0;
@@ -27,7 +27,7 @@ char	*ft_strnstr(const char *dst, const char *str, size_t n)
 			j++;
 		}
 		if (str[j] == 0)
-			return((char *) &(dst[ i - j ]));
+			return ((char *) &(dst[i - j]));
 		i++;
 		j = 0;
 	}
