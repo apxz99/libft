@@ -6,7 +6,7 @@
 /*   By: sarayapa <sarayapa@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/30 17:22:45 by sarayapa          #+#    #+#             */
-/*   Updated: 2025/09/05 22:13:07 by sarayapa         ###   ########.fr       */
+/*   Updated: 2025/09/06 10:32:30 by sarayapa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -174,7 +174,13 @@
 //  return 0;
 //}
 
+//int main()
+//{
+//  printf("%s",ft_strndup("Hello", 4));
+//}
+
 int main()
 {
-  printf("%s",ft_strndup("Hello", 4));
+	char s[] = "Hello , 42 Bangkok";
+ 	ft_substr(s, 5, 4 );
 }
