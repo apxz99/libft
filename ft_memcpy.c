@@ -1,40 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sarayapa <sarayapa@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/31 10:09:14 by sarayapa          #+#    #+#             */
-/*   Updated: 2025/09/09 05:42:46 by sarayapa         ###   ########.fr       */
+/*   Created: 2025/09/09 05:38:41 by sarayapa          #+#    #+#             */
+/*   Updated: 2025/09/09 05:50:11 by sarayapa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dest, const void *s, size_t n)
+void	*ft_memcpy(void *d, const void *s, size_t n)
 {
 	unsigned char	*temp;
-	unsigned char	*src;
-
-	temp = (unsigned char *)dest;
-	src = (unsigned char *)s;
-	if (ft_strlen(dest) < ft_strlen(s))
+	unsigned char	*sorce;
+	temp = (unsigned char *)d;
+	sorce = (unsigned char *)s;
+	while(n > 0)
 	{
-		while (n > 0)
-		{
-			*temp++ = *src++;
-			n--;
-		}
-		*temp++ = '\0';
-	}
-	else
-	{
-		while (n > 0)
-		{
-			*temp++ = *src++;
-			n--;
-		}
+		*temp++ = *sorce++;
+		n--;
 	}
 	return (temp);
 }

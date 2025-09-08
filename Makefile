@@ -6,7 +6,7 @@
 #    By: sarayapa <sarayapa@student.42bangkok.co    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/08/29 17:32:46 by sarayapa          #+#    #+#              #
-#    Updated: 2025/09/08 19:03:42 by sarayapa         ###   ########.fr        #
+#    Updated: 2025/09/08 22:36:58 by sarayapa         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ FILE = ft_atoi.c  ft_isalnum.c  ft_isalpha.c \
 		ft_strchr.c	ft_strrchr.c ft_memchr.c \
 		ft_memcmp.c ft_strnstr.c ft_strndup.c \
 		ft_substr.c ft_strjoin.c ft_strtrim.c \
-		ft_split.c
+		ft_split.c ft_memcmp.c ft_memcpy.c
 
 BUILD = build/
 SOURCE =

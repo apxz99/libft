@@ -6,7 +6,7 @@
 /*   By: sarayapa <sarayapa@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/30 17:22:45 by sarayapa          #+#    #+#             */
-/*   Updated: 2025/09/08 21:49:53 by sarayapa         ###   ########.fr       */
+/*   Updated: 2025/09/09 05:50:11 by sarayapa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -200,3 +200,18 @@
 //		printf("%s\n",str[i]);
 //	free(str);
 //}
+int main()
+{
+    // Initialize a variable
+    int a = 20;
+    int b = 10;
+
+    printf("Value of b before calling memcpy: %d\n", b);
+
+    // Use memcpy to copy the value of 'a' into 'b'
+    ft_memcpy(&b, &a, sizeof(int));
+
+    printf("Value of b after calling memcpy: %d\n", b);
+
+    return 0;
+}
