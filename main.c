@@ -6,7 +6,7 @@
 /*   By: sarayapa <sarayapa@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/30 17:22:45 by sarayapa          #+#    #+#             */
-/*   Updated: 2025/09/08 18:57:08 by sarayapa         ###   ########.fr       */
+/*   Updated: 2025/09/08 21:49:53 by sarayapa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -128,27 +128,19 @@
 
 //int	main()
 //{
-//	printf("%s",ft_strchr("Hello", 'e'));
-//}
+//	printf("ft_strchr: %s\n",ft_strchr("Hello", 'e'));
 
-//int	main(void)
-//{
-//	printf("%s", ft_strrchr("Hello", 'e'));
-//}
-//int main ()
-//{
-//  char * pch;
-//  char str[] = "Example string";
-//  pch = (char*) ft_memchr (str, 'p', strlen(str));
-//  if (pch!=NULL)
-//    printf ("'p' found at position %ld.\n", pch-str+1);
-//  else
-//    printf ("'p' not found.\n");
-//  return 0;
-//}
+//	printf("ft_strrchr :%s\n", ft_strrchr("Hello", 'e'));
 
-//int main ()
-//{
+//	char * pch;
+//	char str[] = "Example string";
+//	pch = (char*) ft_memchr (str, 'p', strlen(str));
+//	if (pch!=NULL)
+//		printf ("'p' found at position %ld.\n", pch-str+1);
+//	else
+//		printf ("'p' not found.\n");
+//	return 0;
+
 //  char buffer1[] = "DWgaOtP12df0";
 //  char buffer2[] = "DWGAOTP12DF0";
 
@@ -197,5 +189,14 @@
 //{
 //	char *str = ft_strtrim("Hello","ll");
 //	printf("%s",str);
+//	free(str);
+//}
+
+//int main()
+//{
+//	int i = -1;
+//    char **str = ft_split("abcxsdxasdxwadawdazawx", 'x');
+//	while(str[++i])
+//		printf("%s\n",str[i]);
 //	free(str);
 //}
