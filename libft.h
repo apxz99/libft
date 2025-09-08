@@ -6,7 +6,7 @@
 /*   By: sarayapa <sarayapa@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/29 17:14:39 by sarayapa          #+#    #+#             */
-/*   Updated: 2025/09/08 18:38:33 by sarayapa         ###   ########.fr       */
+/*   Updated: 2025/09/08 18:45:18 by sarayapa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,5 +38,6 @@ char	*ft_strnstr(const char *dst, const char *str, size_t n);
 char	*ft_strndup(const char *s, size_t n);
 char	*ft_substr(char const *s, unsigned int i, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strtrim(char const *s1, char const *set);
 
 #endif

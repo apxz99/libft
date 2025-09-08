@@ -23,13 +23,13 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	j = 0;
 	k = 0;
 	res = malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
-	while(j < ft_strlen(s1))
+	while (j < ft_strlen(s1))
 	{
 		res[i] = s1[j];
 		i++;
 		j++;
 	}
-	while(k < strlen(s2))
+	while (k < strlen(s2))
 	{
 		res[i] = s2[k];
 		i++;
