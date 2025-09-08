@@ -6,25 +6,25 @@
 /*   By: sarayapa <sarayapa@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/05 21:48:44 by sarayapa          #+#    #+#             */
-/*   Updated: 2025/09/08 18:36:18 by sarayapa         ###   ########.fr       */
+/*   Updated: 2025/09/08 18:38:12 by sarayapa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char    *ft_strndup(const char *s, size_t n)
+char	*ft_strndup(const char *s, size_t n)
 {
-    char *str;
-    size_t    i;
+	char	*str;
+	size_t	i;
 
-    i = 0;
-    str = malloc(n + 1);
-    while (s[i] && n > 0)
-    {
-      str[i] = s[i];
-      n--;
-      i++;
-    }
-    str[i] = '\0';
-    return (str);
+	i = 0;
+	str = malloc(n + 1);
+	while (s[i] && n > 0)
+	{
+		str[i] = s[i];
+		n--;
+		i++;
+	}
+	str[i] = '\0';
+	return (str);
 }
