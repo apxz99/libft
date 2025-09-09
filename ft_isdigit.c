@@ -6,13 +6,13 @@
 /*   By: sarayapa <sarayapa@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/31 03:34:32 by sarayapa          #+#    #+#             */
-/*   Updated: 2025/08/31 04:58:04 by sarayapa         ###   ########.fr       */
+/*   Updated: 2025/09/09 08:12:37 by sarayapa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isascii(int c)
+int	ft_isdigit(int c)
 {
 	return ((c >= '0') && (c <= '9'));
 }
