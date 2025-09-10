@@ -6,7 +6,7 @@
 /*   By: sarayapa <sarayapa@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/30 17:22:45 by sarayapa          #+#    #+#             */
-/*   Updated: 2025/09/09 05:50:11 by sarayapa         ###   ########.fr       */
+/*   Updated: 2025/09/10 21:45:24 by sarayapa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -200,18 +200,125 @@
 //		printf("%s\n",str[i]);
 //	free(str);
 //}
+//int main()
+//{
+//    // Initialize a variable
+//    int a = 20;
+//    int b = 10;
+
+//    printf("Value of b before calling memcpy: %d\n", b);
+
+//    // Use memcpy to copy the value of 'a' into 'b'
+//    ft_memcpy(&b, &a, sizeof(int));
+
+//    printf("Value of b after calling memcpy: %d\n", b);
+
+//    return 0;
+//
+//int	main()
+//{
+//	printf("%s\n",ft_itoa(-234));
+//	printf("%s\n",ft_itoa(234));
+//}
+
+
+//int	main()
+//{
+//	//printf("'a' = %d\n",ft_isalpha('a'));
+//	//printf("'A' = %d\n",ft_isalpha('A'));
+//	//printf("'2' = %d\n",ft_isalpha('2'));
+//	//printf("\n");
+//	printf("\n");
+//}
+
+//char my_func(unsigned int i, char c) {
+//    if (i % 2 == 0 && c >= 'a' && c <= 'z')
+//        return c - 32;
+//    return c;
+//}
+
+//int	main()
+//{
+//	char *original_string = "Hello World!";
+//	printf("%s\n", original_string);
+//	printf("%s\n", ft_strmapi(original_string, my_func));
+//	return (0);
+//}
+
+//void my_func(unsigned int i, char *c) {
+//    if (i % 2 == 0 && c >= 'a' && c <= 'z')
+//        return &c - 32;
+//    return &c;
+//}
+
+//int	main()
+//{
+//	char *original_string = "Hello World!";
+//	printf("%s\n", original_string);
+//	ft_striteri(original_string, my_func);
+//	return (0);
+//}
+//#include <unistd.h>
+
+//int	main()
+//{
+//	char a = 'a';
+//	ft_putchar_fd(a,1);s
+//	ft_putchar_fd('\n',1);
+//	ft_putstr_fd("asd",1);
+//	ft_putchar_fd('\n',1);
+//	ft_putnbr_fd(2323,1);
+//	ft_putchar_fd('\n',1);
+//	ft_putendln_fd("asd",1);
+//	ft_putendln_fd("asd",1);
+//	ft_putendln_fd("asd",1);
+//	ft_putendln_fd("asd",1);
+//}
+
+//int	main()
+//{
+//	char s[] = {65, 66, 67, 68, 69, 0, 45};
+//	char s0[] = { 0,  0,  0,  0,  0,  0, 0};
+//	char sCpy[] = {65, 66, 67, 68, 69, 0, 45};
+//	char sResult[] = {67, 68, 67, 68, 69, 0, 45};
+//	char sResult2[] = {67, 67, 68, 68, 69, 0, 45};
+
+//	ft_memmove(s0, s ,7);
+//	printf("%s", s0);
+//}
 int main()
 {
-    // Initialize a variable
-    int a = 20;
-    int b = 10;
+	//printf("%d\n", ft_strncmp("test", "testss", 7));
+	//printf("%d\n", ft_strncmp("test3", "test4", 4));
+	//printf("%d\n", ft_strncmp("\200", "\0", 1));
 
-    printf("Value of b before calling memcpy: %d\n", b);
+//	char *str = ft_strchr("Hello", '\0');
+//	char *temp = ft_strchr("", 'c');
+//	printf("%s\n",str);
+//	printf("%s\n",temp);
+	//char	*dest = "Hello";
 
-    // Use memcpy to copy the value of 'a' into 'b'
-    ft_memcpy(&b, &a, sizeof(int));
+	//printf("%s\n", dest);
+	//printf("%zu\n", ft_strlcpy(dest, "lad" , 3));
+	//printf("%s\n", dest);
+	//char	*dest;
+	//dest = (char *)malloc(sizeof(*dest) * 15);
+	//memset(dest, 0, 15);
+	//memset(dest, 'r', 6);
+	//dest[14] = 'a';
+	//printf("%zu\n", ft_strlcat(dest, "lorem ipsum dolor sit amet", 15));
+	//printf("%s\n", dest);
+	//char	src[] = "lorem ipsum dolor sit amet";
+	//char	*dest;
 
-    printf("Value of b after calling memcpy: %d\n", b);
+	//dest = src + 1;
+	//ft_memmove(dest, src, 8);
+	//printf("%s",dest);
+	//printf("%s\n",ft_itoa(-10));
+	//printf("%s\n",ft_itoa(10));
+	//printf("%s\n",ft_itoa(543000));
+	//printf("%s\n",ft_itoa(-2147483648LL));
 
-    return 0;
+	char s1[] = "lorem \n ipsum \t dolor \n sit \t amet";
+	printf("%s",ft_strtrim(s1, " "));
 }

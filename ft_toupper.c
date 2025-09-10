@@ -6,7 +6,7 @@
 /*   By: sarayapa <sarayapa@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/31 04:10:57 by sarayapa          #+#    #+#             */
-/*   Updated: 2025/08/31 04:15:35 by sarayapa         ###   ########.fr       */
+/*   Updated: 2025/09/10 13:28:10 by sarayapa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,9 @@
 
 int	ft_toupper(int c)
 {
-	if ((c >= 'a') || (c <= 'z'))
+	if (!c)
+		return (0);
+	else if ((c >= 'a') && (c <= 'z'))
 		return (c - 32);
 	else
 		return (c);

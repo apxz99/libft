@@ -6,7 +6,7 @@
 /*   By: sarayapa <sarayapa@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/31 04:16:03 by sarayapa          #+#    #+#             */
-/*   Updated: 2025/08/31 04:16:23 by sarayapa         ###   ########.fr       */
+/*   Updated: 2025/09/10 13:28:05 by sarayapa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,9 @@
 
 int	ft_tolower(int c)
 {
-	if ((c >= 'A') || (c <= 'Z'))
+	if (!c)
+		return (0);
+	else if ((c >= 'A') && (c <= 'Z'))
 		return (c + 32);
 	else
 		return (c);

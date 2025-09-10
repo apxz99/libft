@@ -6,7 +6,7 @@
 /*   By: sarayapa <sarayapa@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/04 18:34:27 by sarayapa          #+#    #+#             */
-/*   Updated: 2025/09/08 19:31:51 by sarayapa         ###   ########.fr       */
+/*   Updated: 2025/09/10 16:07:26 by sarayapa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,19 @@
 char	*ft_strchr(const char *s, int c)
 {
 	size_t	i;
+	char	*temp;
 
+	if (!s)
+		return (NULL);
+	temp = (char *)s;
 	i = 0;
-	while (s[i])
+	while (temp[i])
 	{
-		if (s[i] == c)
-			return ((char *)&s[i]);
+		if (temp[i] == (char)c)
+			return (temp + i);
 		i++;
 	}
-	return (0);
+	if ((char)c == '\0')
+		return (temp + i);
+	return (NULL);
 }

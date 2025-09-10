@@ -6,25 +6,25 @@
 /*   By: sarayapa <sarayapa@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/31 03:34:27 by sarayapa          #+#    #+#             */
-/*   Updated: 2025/09/09 08:23:05 by sarayapa         ###   ########.fr       */
+/*   Updated: 2025/09/10 15:41:00 by sarayapa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strncmp(const char *s1, const char *s2, size_t n)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	i;
 
 	i = 0;
-	while ((s1[i] || s2[i]) && n < i)
+	if (!s1 || !s2)
+		return (0);
+	while ((s1[i] == s2[i]) && n > 0)
 	{
-		if ((s1[i] - s2[i]) > 0)
-			return (1);
-		else if ((s1[i] - s2[i]) < 0)
-			return (1);
-		else
-			i++;
+		i++;
+		n--;
 	}
-	return (0);
+	if (n == 0)
+		return (0);
+	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }

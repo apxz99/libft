@@ -6,7 +6,7 @@
 /*   By: sarayapa <sarayapa@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/31 04:16:45 by sarayapa          #+#    #+#             */
-/*   Updated: 2025/09/05 21:48:31 by sarayapa         ###   ########.fr       */
+/*   Updated: 2025/09/10 18:10:18 by sarayapa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_memset(void *s, int c, size_t n)
 	temp = (unsigned char *)s;
 	while (n > 0)
 	{
-		*temp++ = c;
+		*(temp + (n - 1)) = c;
 		n--;
 	}
 	return (temp);
