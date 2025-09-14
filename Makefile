@@ -6,7 +6,7 @@
 #    By: sarayapa <sarayapa@student.42bangkok.co    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/08/29 17:32:46 by sarayapa          #+#    #+#              #
-#    Updated: 2025/09/10 20:22:22 by sarayapa         ###   ########.fr        #
+#    Updated: 2025/09/14 06:36:43 by sarayapa         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,8 +22,8 @@ FILE = ft_atoi.c  ft_isalnum.c  ft_isalpha.c \
 		ft_split.c ft_memcmp.c ft_memcpy.c \
 		ft_itoa.c ft_atoi.c ft_strmapi.c \
 		ft_striteri.c ft_putchar_fd.c ft_putstr_fd.c \
-		ft_putnbr_fd.c ft_putendl_fd.c
-
+		ft_putnbr_fd.c ft_putendl_fd.c \
+		ft_calloc.c ft_isalnum.c
 
 BUILD = build/
 SOURCE =
@@ -44,7 +44,7 @@ $(NAME): $(OBJ)
 	$(ARCHIVE) $@ $(addprefix $(BUILD),$^)
 
 do:
-	clear && $(CC) $(CLAGS) main.c libft.a -lbsd && ./a.out
+	clear && $(CC) $(CLAGS) main.c libft.a -lbsd && valgrind --leak-check=full -s --log-file=valgrind.rpt ./a.out
 
 rethendo: re do
 

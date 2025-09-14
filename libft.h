@@ -6,19 +6,20 @@
 /*   By: sarayapa <sarayapa@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/29 17:14:39 by sarayapa          #+#    #+#             */
-/*   Updated: 2025/09/10 20:22:27 by sarayapa         ###   ########.fr       */
+/*   Updated: 2025/09/14 06:52:44 by sarayapa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stdio.h>
 # include <stdlib.h>
-# include <string.h>
-# include <ctype.h>
+# include <limits.h>
 # include <unistd.h>
-# include <bsd/string.h>
+//# include <stdio.h>
+//# include <string.h>
+//# include <ctype.h>
+//# include <bsd/string.h>
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
@@ -55,7 +56,7 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n);
 
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
-char	*ft_strtrim(char const *s1, char const *set);
+char	*ft_strtrim(char const *str, char const *set);
 char	**ft_split(char const *s, char c);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));

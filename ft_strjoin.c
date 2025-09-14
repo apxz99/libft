@@ -29,7 +29,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		i++;
 		j++;
 	}
-	while (k < strlen(s2))
+	while (k < ft_strlen(s2))
 	{
 		res[i] = s2[k];
 		i++;
